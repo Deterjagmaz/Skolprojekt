@@ -8,6 +8,7 @@ public class ClickingScript : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI Pointtext;
+    [SerializeField] AudioSource clickSound;
     public GameObject slimeClonePrefab;
 
 
@@ -43,6 +44,7 @@ public class ClickingScript : MonoBehaviour
                 StaticData.Score += StaticData.clickingPower;
                 Pointtext.text = "Slime Harvested: " + StaticData.Score;
                 SpawnClone();
+                clickSound.Play();
             }
         }
         Pointtext.text = "Slime Harvested: " + StaticData.Score;
