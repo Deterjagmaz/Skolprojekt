@@ -3,15 +3,18 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - MainObject
+  - Death Plane
+  - Background detail
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - backgroundFX
   - Water
   - UI
-  - 
+  - Background
   - 
   - 
   - 
@@ -38,6 +41,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 1930688593
+    locked: 0
+  - name: Background objects
+    uniqueID: 64434629
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
