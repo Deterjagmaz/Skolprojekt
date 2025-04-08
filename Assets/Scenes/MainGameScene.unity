@@ -256,7 +256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   script: {fileID: 1208971274}
-  MenuClick: {fileID: 1665975602}
+  MenuClick: {fileID: 1558905748}
 --- !u!4 &339599520
 Transform:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 77027ac297ec57a429c71143d707b166, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
