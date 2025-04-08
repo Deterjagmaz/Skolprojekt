@@ -17,15 +17,15 @@ public class GoofyahhStayAlive : MonoBehaviour
     private static GoofyahhStayAlive instance;
     void Awake()
     {
-        // If there's no instance of AutoUpgradeScript, make this object the instance
+       
         if (instance == null)
         {
-            instance = this;  // Set this object as the single instance
-            DontDestroyOnLoad(gameObject);  // Ensure this object isn't destroyed when loading a new scene
+            instance = this; 
+            DontDestroyOnLoad(gameObject);  
         }
         else
         {
-            // If an instance already exists, destroy this duplicate object
+            
             Destroy(gameObject);
         }
     }

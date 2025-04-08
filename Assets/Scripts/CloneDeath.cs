@@ -8,7 +8,7 @@ public class CloneDeath : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Death Plane"))
         {
-            // Destroy the clone when it hits the Death Plane
+            
             Destroy(gameObject);
         }
     }

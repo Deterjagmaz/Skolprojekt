@@ -15,7 +15,7 @@ public class MenuControll : MonoBehaviour
     {
 
     }
-    // When the button is clicked
+    
     public void OnButtonClick()
     {
         MenuClick.Play();

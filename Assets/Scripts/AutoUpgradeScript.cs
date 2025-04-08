@@ -6,21 +6,20 @@ using UnityEngine.SceneManagement;
 public class AutoUpgradeScript : MonoBehaviour
 {
     private static AutoUpgradeScript instance;
-    [SerializeField] GameObject slimeClone;// Static reference to the single instance
+    [SerializeField] GameObject slimeClone;
     [SerializeField] AudioSource BGM;
 
     void Awake()
     {
         BGM.Play();
-        // If there's no instance of AutoUpgradeScript, make this object the instance
+        
         if (instance == null)
         {
-            instance = this;  // Set this object as the single instance
-            DontDestroyOnLoad(gameObject);  // Ensure this object isn't destroyed when loading a new scene
+            instance = this;  
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
-            // If an instance already exists, destroy this duplicate object
             Destroy(gameObject);
         }
     }
